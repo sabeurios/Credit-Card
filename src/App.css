@@ -13,8 +13,9 @@ body{
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.App-header div{
+.App-header>div{
 margin: 0px 10px;
+/* border: 1px solid; */
 }
 
 .input-form{
@@ -33,22 +34,42 @@ margin: 0px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
-  height: 120px;
-  padding: 25px;
+  width: 220px;
+  height: 132px;
+  padding: 15px;
   border-radius: 15px;
   color: white;
   background-color: #124164;
+  font-size: 12px;
 }
-/* .credit-card  div{
-  border:1px solid black
-} */
-.credit-card img{
+.card-puce{
   width: 26px;
   height: 25px;
+  /* margin-left: 9px; */
   border-radius: 5px;
   border: 1px solid gray;
 }
+.card-logo{
+  width: 50px;
+  height: 40px;
+}
 .bank-name {
+  text-align: end;
+}
+.card-footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expiry{
+  position: fixed;
+  top: 250px;
+  right: 350px;
+}
+.name{
+  width: 119px;
+  height: 13px;
+  text-align: initial;
+  margin-top: 20px;
 }
 

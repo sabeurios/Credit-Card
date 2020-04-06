@@ -19,7 +19,7 @@ function App() {
         </div>
         <div className="input-form">
           <input
-            type="password"
+            type="tel"
             name="number"
             placeholder="Card Number"
             value={number}
@@ -29,13 +29,13 @@ function App() {
             type="text"
             name="name"
             placeholder="Name"
-            value={name}
+            value={name.toUpperCase()}
             onChange={evt=>SetName(evt.target.value)}>
           </input>
           <input
             type="text"
             name="expiry"
-            placeholder="MM/YY Expiry"
+            placeholder="MM/YY"
             value={expiry}
             onChange={evt=>SetExpiry(evt.target.value)}>
           </input>
