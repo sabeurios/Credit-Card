@@ -54,7 +54,10 @@ const Card =(props) => {
           month = date.substr(0, 2);
           year = date.substr(2, 6);
         }
-        if(month>12)
+
+        if(month<10)
+        {month=month.padStart(0,1)}
+        else if(month>12)
         { alert("Month cannot exceed 31")}
     
         while (month.length < 2) {
